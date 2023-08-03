@@ -16,7 +16,7 @@ public class SyracuseFunction {
     }
     public static void main(String[] args) {
         SyracuseFunction resultF = new SyracuseFunction();
-        int result = resultF.syracuseFunction(15,8);
+        int result = resultF.syracuseFunction(15,1);
         System.out.println("syracuse is "+result);
     }
 }
