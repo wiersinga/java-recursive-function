@@ -1,8 +1,15 @@
 public class SyracuseFunction {
-    public int syracuseFunction(int N, int i) {
+
+    public int syracuseFunction(int N, int i){
+        assert N > 0;
+        assert i >= 0;
+        return syracuseFunctionRec(N,i);
+    }
+
+    private int syracuseFunctionRec(int N, int i) {
         int result;
 
-            if (i == 0 && N>0) {
+            if (i == 0 ) {
                 result = N;
             } else {
                 if (syracuseFunction(N, i - 1) % 2 == 0) {
